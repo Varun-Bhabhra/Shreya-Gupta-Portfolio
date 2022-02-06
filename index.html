@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLESHEET IMPORT -->
+  <link rel="stylesheet" href="./style/output.css">
+  <link rel="stylesheet" href="./style/customStyle.css">
+  <link rel="stylesheet" href="./style/hamburger.css">
+  <title>Shreya Gupta</title>
+
+  <!-- Ubuntu [Google Font Link] -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Ubuntu Mono [Google Font Link] -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons [Font Awesome Link] -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-primary font-ubuntu relative">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="text-secondary p-6 md:p-8 text-xl font-thin flex justify-between">
+    <h1 class="text-xl md:text-2xl font-normal">Shreya Gupta</h1>
+    <!-- hamburger -->
+    <label for="check" class="md:hidden">
+      <input type="checkbox" id="check" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <!-- desktop menu -->
+    <div id="desktopMenu" class="hidden md:block text-lg text-textDark font-ubuntuMono">
+      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">About</a>
+      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Experiance</a>
+      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Work</a>
+      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Contact</a>
+
+      <a href="#" download class="px-6 py-3 text-center tracking-widest rounded-sm border-2 border-textDark hover:border-secondary hover:text-secondary hover:translate-x-2 transition-all">Resume</a>
+    </div>
+  </nav>
+
+  <!-- mobile menu -->
+  <menu id="dropdown" class="hidden text-secondary font-ubuntuMono">
+    <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 h-screen p-4 text-right rounded-lg flex flex-col gap-2">
+      <a href="#" class="tracking-[4px] my-12 mx-6">About</a>
+      <a href="#" class="tracking-[4px] my-12 mx-6">Experiance</a>
+      <a href="#" class="tracking-[4px] my-12 mx-6">Work</a>
+      <a href="#" class="tracking-[4px] my-12 mx-6">Contact</a>
+
+      <a href="#" download class="m-6 px-4 py-2 text-center tracking-[4px] border-2 border-secondary rounded-md">Resume</a>
+    </div>
+  </menu>
+
+
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

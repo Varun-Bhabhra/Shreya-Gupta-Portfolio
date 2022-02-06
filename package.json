@@ -1,0 +1,27 @@
+{
+  "name": "shreya-gupta-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website for a MSc Computer Science student, which happens to be my friend.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build ./src/input.css -o ./style/output.css --watch",
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varun-Bhabhra/Shreya-Gupta-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varun-Bhabhra/Shreya-Gupta-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Varun-Bhabhra/Shreya-Gupta-Portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18",
+    "vite": "^2.7.13"
+  }
+}
