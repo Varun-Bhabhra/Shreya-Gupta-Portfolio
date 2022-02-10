@@ -1,8 +1,26 @@
 ﻿#navbar{
 background: rgba( 35, 39, 52, 0 );
-backdrop-filter: blur( 20px );
+backdrop-filter: blur( 10px );
 }
 
 #dropdown{
-  background-color: rgba(48, 55, 78, 0.4);
+  background-color: rgb(48, 55, 78);
 }
+
+body::-webkit-scrollbar{
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(100, 255, 218, 0.6);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #64ffda;
+}
+
+/* body::-webkit-scrollbar-track{
+  border: 2pc solid #fff;
+} */
+

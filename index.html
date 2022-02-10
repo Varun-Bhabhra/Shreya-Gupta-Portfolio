@@ -28,8 +28,8 @@
 <body class="bg-primary font-ubuntu relative">
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="text-secondary p-6 md:p-8 text-xl font-thin flex justify-between">
-    <h1 class="text-xl md:text-2xl font-normal">Shreya Gupta</h1>
+  <nav id="navbar" class="text-secondary p-6 md:p-8 text-xl font-thin flex justify-between shadow-lg">
+    <h1 class="text-xl md:text-2xl font-normal hover:first-letter:">Shreya Gupta</h1>
     <!-- hamburger -->
     <label for="check" class="md:hidden">
       <input type="checkbox" id="check" />
@@ -38,30 +38,51 @@
       <span></span>
     </label>
     <!-- desktop menu -->
-    <div id="desktopMenu" class="hidden md:block text-lg text-textDark font-ubuntuMono">
-      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">About</a>
-      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Experiance</a>
-      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Work</a>
-      <a href="#" class="mx-4 hover:underline underline-offset-4 hover:text-secondary transition-all">Contact</a>
+    <div id="desktopMenu" class="hidden md:block text-sm text-textDark font-ubuntuMono">
+      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">About</a>
+      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Experiance</a>
+      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Work</a>
+      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Contact</a>
 
-      <a href="#" download class="px-6 py-3 text-center tracking-widest rounded-sm border-2 border-textDark hover:border-secondary hover:text-secondary hover:translate-x-2 transition-all">Resume</a>
+      <a href="#" download class="inline-block mx-4 lg:mx-8 py-3 px-8 border border-secondary rounded-sm text-secondary hover:underline underline-offset-4 hover:rounded-md hover:shadow-md hover:shadow-secondary hover:-translate-y-1 hover:scale-x-110 transition-all">Resume<i class="pl-4 fas fa-file-download hover:translate-y-1 transition-all"></i></a>
     </div>
   </nav>
-
-  <!-- mobile menu -->
-  <menu id="dropdown" class="hidden text-secondary font-ubuntuMono">
-    <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 h-screen p-4 text-right rounded-lg flex flex-col gap-2">
-      <a href="#" class="tracking-[4px] my-12 mx-6">About</a>
-      <a href="#" class="tracking-[4px] my-12 mx-6">Experiance</a>
-      <a href="#" class="tracking-[4px] my-12 mx-6">Work</a>
-      <a href="#" class="tracking-[4px] my-12 mx-6">Contact</a>
+  <!-- Modal Menu -->
+  <menu id="dropdown" class="hidden h-full text-secondary font-ubuntuMono">
+    <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 p-4 text-right rounded-lg flex flex-col gap-2">
+      <a href="#" class="tracking-[4px] my-4 mx-6">About</a>
+      <a href="#" class="tracking-[4px] my-4 mx-6">Experiance</a>
+      <a href="#" class="tracking-[4px] my-4 mx-6">Work</a>
+      <a href="#" class="tracking-[4px] my-4 mx-6">Contact</a>
 
       <a href="#" download class="m-6 px-4 py-2 text-center tracking-[4px] border-2 border-secondary rounded-md">Resume</a>
     </div>
   </menu>
 
+  <!-- MAIN BODY -->
+  <main class="mt-12 p-6">
+    <!-- Landing Page -->
+    <section class="md:w-3/6 text-textLight flex flex-col gap-6 md:flex-row md:mx-auto">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-textDark font-extrabold text-4xl">My name is <span class="text-secondary">Shreya</span>.</h1>
+        <h1 class="text-2xl font-bold">I code for fun, and as a job.</h1>
+        <p class="text-[16px] font-thin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero sunt odio optio magnam nostrum nemo voluptas, aliquid rem ullam, adipisci autem suscipit recusandae minima distinctio reprehenderit a numquam corporis.</p>
+        <a href="#" class="w-3/6 my-4 p-4 text-secondary text-center text-lg border-2 border-secondary rounded-lg">Contact Me</a>
+      </div>
+      <div class="my-4 text-xl flex gap-3 md:flex-col">
+        <a href="#"><i class="fab fa-facebook p-3 border-2 border-secondary rounded-full"></i></a>
+        <a href="#"><i class="fab fa-twitter p-3 border-2 border-secondary rounded-full"></i></a>
+        <a href="#"><i class="fab fa-reddit p-3 border-2 border-secondary rounded-full"></i></a>
+        <a href="#"><i class="fab fa-github p-3 border-2 border-secondary rounded-full"></i></a>
+        <a href="#"><i class="fab fa-instagram p-3 border-2 border-secondary rounded-full"></i></a>
+      </div>
+    </section>
+  </main>
 
+  <!-- FOOTER -->
+  <footer>
 
+  </footer>
   <script src="./script/script.js"></script>
 </body>
 
