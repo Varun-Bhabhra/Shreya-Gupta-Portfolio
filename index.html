@@ -28,7 +28,7 @@
 <body class="bg-primary font-ubuntu relative">
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="text-secondary p-6 md:p-8 text-xl font-thin flex justify-between shadow-lg">
+  <nav id="navbar" class="md:fixed w-full text-secondary p-6 text-xl font-thin flex justify-between shadow-lg">
     <h1 class="text-xl md:text-2xl font-normal hover:first-letter:">Shreya Gupta</h1>
     <!-- hamburger -->
     <label for="check" class="md:hidden">
@@ -60,16 +60,16 @@
   </menu>
 
   <!-- MAIN BODY -->
-  <main class="mt-12 p-6">
+  <main class="pt32 mdpt-64 p-6">
     <!-- Landing Page -->
-    <section class="md:w-3/6 text-textLight flex flex-col gap-6 md:flex-row md:mx-auto">
+    <section id="landing_section" class="md:w-4/6 lg:w-3/6 mt-32 md:mt-64 text-textLight flex flex-col gap-6 md:gap-12 md:flex-row md:mx-auto">
       <div class="flex flex-col gap-6">
-        <h1 class="text-textDark font-extrabold text-4xl">My name is <span class="text-secondary">Shreya</span>.</h1>
-        <h1 class="text-2xl font-bold">I code for fun, and as a job.</h1>
+        <h1 class="text-textDark font-extrabold text-4xl sm:text-5xl lg:text-6xl">My name is <span class="text-secondary">Shreya</span>.</h1>
+        <h1 class="text-2xl md:text-3xl font-bold">I code for fun, and as a job.</h1>
         <p class="text-[16px] font-thin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero sunt odio optio magnam nostrum nemo voluptas, aliquid rem ullam, adipisci autem suscipit recusandae minima distinctio reprehenderit a numquam corporis.</p>
-        <a href="#" class="w-3/6 my-4 p-4 text-secondary text-center text-lg border-2 border-secondary rounded-lg">Contact Me</a>
+        <a href="#" class="w-3/6 md:w-2/6 my-4 p-4 text-secondary text-center text-lg border-2 border-secondary rounded-lg">Contact Me</a>
       </div>
-      <div class="my-4 text-xl flex gap-3 md:flex-col">
+      <div class="socials my-4 text-xl lg:text-2xl flex gap-3 md:flex-col">
         <a href="#"><i class="fab fa-facebook p-3 border-2 border-secondary rounded-full"></i></a>
         <a href="#"><i class="fab fa-twitter p-3 border-2 border-secondary rounded-full"></i></a>
         <a href="#"><i class="fab fa-reddit p-3 border-2 border-secondary rounded-full"></i></a>
@@ -77,7 +77,77 @@
         <a href="#"><i class="fab fa-instagram p-3 border-2 border-secondary rounded-full"></i></a>
       </div>
     </section>
+
+    <!-- ABOUT ME -->
+    <section id="about_section" class="mt-52 lg:mx-32 text-textLight text-left md:flex justify-center gap-8 lg:gap-16 xl:gap-24">
+      <img src="https://images.unsplash.com/photo-1582399511849-ee8ea545ce53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1c2luZXNzJTIwd29tZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="A Lady" class="w-5/6 sm:w-3/6 rounded-xl mx-auto">
+
+      <div class="my-16 flex flex-col gap-8">
+        <h1 class="text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">About me</h1>
+        <p class="text-sm md:text-lg font-thin indent-8 tracking-wide">I am a pro Girl, yoyo! Adipisicing elit, Doloribus asperiores gum dolorum magni repudiandae odio non fuga impedit, harum suscipit vel tempore nesciunt consectetur incidunt, ipsum voluptatibus placeat accusantium laboriosam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique illo omnis gum, et
+          quo non
+          tempora,
+          saepe
+          reiciendisleading-6
+          enim unde
+          laboreipsa atque eaque repellat ab temporibus esse! Illum, tenetur.</p>
+
+        <div class="">
+          <i class="fa-brands fa-js-square text-4xl"></i>
+          <i class="fa-brands fa-css3-alt text-4xl"></i>
+          <i class="fa-brands fa-python text-4xl"></i>
+          <i class="fa-brands fa-html5 text-4xl"></i>
+          <i class="fa-brands fa-python text-4xl"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience_section" class="mt-52 text-textLight ">
+      <h1 class="mb-32 text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:text-center">Work Experience</h1>
+
+      <div id="card_div" class="mt-20 font-ubuntuMono flex flex-col md:flex-row gap-8 md:gap-12">
+
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+          <img src="./img/svg/working3.svg" alt="lady working" class="w-5/6 mx-auto">
+          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
+          <hr class="opacity-50 mx-auto w-3/6">
+          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
+            sapiente, sit
+            itaque
+            architecto
+          </p>
+          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
+        </article>
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+          <img src="./img/svg/working2.svg" alt="lady working" class="w-5/6 mx-auto">
+          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
+          <hr class="opacity-50 mx-auto w-3/6">
+          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
+            sapiente, sit
+            itaque
+            architecto
+          </p>
+          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
+        </article>
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+          <img src="./img/svg/working4.svg" alt="lady working" class="w-5/6 mx-auto">
+          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
+          <hr class="opacity-50 mx-auto w-3/6">
+          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
+            sapiente, sit
+            itaque
+            architecto
+          </p>
+          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
+        </article>
+
+      </div>
+    </section>
   </main>
+
+  <article class="h-screen "></article>
+  <article class="h-screen "></article>
 
   <!-- FOOTER -->
   <footer>
