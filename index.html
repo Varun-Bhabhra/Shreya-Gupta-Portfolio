@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-primary font-ubuntu relative">
+<body class="bg-primary font-ubuntu relative ">
 
   <!-- NAVBAR -->
   <nav id="navbar" class="md:fixed w-full text-secondary p-6 text-xl font-thin flex justify-between shadow-lg">
@@ -39,21 +39,21 @@
     </label>
     <!-- desktop menu -->
     <div id="desktopMenu" class="hidden md:block text-sm text-textDark font-ubuntuMono">
-      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">About</a>
-      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Experiance</a>
-      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Work</a>
-      <a href="#" class="mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all">Contact</a>
+      <a class="about mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">About</a>
+      <a class="experience mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">Experience</a>
+      <a class="work mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-red-400 transition-all cursor-pointer line-through">Work</a>
+      <a class="contact mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">Contact</a>
 
       <a href="#" download class="inline-block mx-4 lg:mx-8 py-3 px-8 border border-secondary rounded-sm text-secondary hover:underline underline-offset-4 hover:rounded-md hover:shadow-md hover:shadow-secondary hover:-translate-y-1 hover:scale-x-110 transition-all">Resume<i class="pl-4 fas fa-file-download hover:translate-y-1 transition-all"></i></a>
     </div>
   </nav>
   <!-- Modal Menu -->
   <menu id="dropdown" class="hidden h-full text-secondary font-ubuntuMono">
-    <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 p-4 text-right rounded-lg flex flex-col gap-2">
-      <a href="#" class="tracking-[4px] my-4 mx-6">About</a>
-      <a href="#" class="tracking-[4px] my-4 mx-6">Experiance</a>
-      <a href="#" class="tracking-[4px] my-4 mx-6">Work</a>
-      <a href="#" class="tracking-[4px] my-4 mx-6">Contact</a>
+    <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 p-4 text-right rounded-lg flex flex-col gap-2 border-2 border-secondary">
+      <a class="about tracking-[4px] my-4 mx-6 cursor-pointer">About</a>
+      <a class="experience tracking-[4px] my-4 mx-6 cursor-pointer">Experience</a>
+      <a class="work tracking-[4px] my-4 mx-6 cursor-pointer">Work</a>
+      <a class="contact tracking-[4px] my-4 mx-6 cursor-pointer">Contact</a>
 
       <a href="#" download class="m-6 px-4 py-2 text-center tracking-[4px] border-2 border-secondary rounded-md">Resume</a>
     </div>
@@ -64,10 +64,10 @@
     <!-- Landing Page -->
     <section id="landing_section" class="md:w-4/6 lg:w-3/6 mt-32 md:mt-64 text-textLight flex flex-col gap-6 md:gap-12 md:flex-row md:mx-auto">
       <div class="flex flex-col gap-6">
-        <h1 class="text-textDark font-extrabold text-4xl sm:text-5xl lg:text-6xl">My name is <span class="text-secondary">Shreya</span>.</h1>
+        <h1 class="text-textDark font-extrabold text-4xl sm:text-5xl lg:text-6xl">Hey! I'm <span class="text-secondary">Shreya</span>.</h1>
         <h1 class="text-2xl md:text-3xl font-bold">I code for fun, and as a job.</h1>
         <p class="text-[16px] font-thin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero sunt odio optio magnam nostrum nemo voluptas, aliquid rem ullam, adipisci autem suscipit recusandae minima distinctio reprehenderit a numquam corporis.</p>
-        <a href="#" class="w-3/6 md:w-2/6 my-4 p-4 text-secondary text-center text-lg border-2 border-secondary rounded-lg">Contact Me</a>
+        <a id="contact" href="#" class="w-3/6 md:w-2/6 my-4 p-4 text-secondary text-center text-lg border-2 border-secondary rounded-lg">Contact Me</a>
       </div>
       <div class="socials my-4 text-xl lg:text-2xl flex gap-3 md:flex-col">
         <a href="#"><i class="fab fa-facebook p-3 border-2 border-secondary rounded-full"></i></a>
@@ -103,22 +103,11 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience_section" class="mt-52 text-textLight ">
+    <section id="experience_section" class="mt-52 text-textLight">
       <h1 class="mb-32 text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:text-center">Work Experience</h1>
 
-      <div id="card_div" class="mt-20 font-ubuntuMono flex flex-col md:flex-row gap-8 md:gap-12">
+      <div id="card_div" class="mt-20 lg:mx-32 font-ubuntuMono flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-24">
 
-        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
-          <img src="./img/svg/working3.svg" alt="lady working" class="w-5/6 mx-auto">
-          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
-          <hr class="opacity-50 mx-auto w-3/6">
-          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
-            sapiente, sit
-            itaque
-            architecto
-          </p>
-          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
-        </article>
         <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
           <img src="./img/svg/working2.svg" alt="lady working" class="w-5/6 mx-auto">
           <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
@@ -130,8 +119,21 @@
           </p>
           <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
         </article>
-        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+
+        <article class="card_article sm:w-4/6 lg:w-2/6 lg: mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
           <img src="./img/svg/working4.svg" alt="lady working" class="w-5/6 mx-auto">
+          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
+          <hr class="opacity-50 mx-auto w-3/6">
+          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
+            sapiente, sit
+            itaque
+            architecto
+          </p>
+          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
+        </article>
+
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+          <img src="./img/svg/working3.svg" alt="lady working" class="w-5/6 mx-auto">
           <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Capsule Labs</h1>
           <hr class="opacity-50 mx-auto w-3/6">
           <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
@@ -146,13 +148,35 @@
     </section>
   </main>
 
-  <article class="h-screen "></article>
-  <article class="h-screen "></article>
-
   <!-- FOOTER -->
-  <footer>
+  <footer id="contact_section" class="w-4/6 mx-auto mb-12 mt-52 text-textLight">
+    <div class="flex flex-col justify-center items-center  font-extrabold gap-8">
+      <img src="https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Me" class="w-28 h-28 rounded-full object-cover border-2 border-secondary">
+      <h1 class="text-4xl text-center">That's it bitches! <br> What more do you want?</h1>
+    </div>
 
+    <div class="socials my-16 text-xl lg:text-2xl flex gap-5 md:gap-12 justify-center">
+      <a href="#"><i class="fab fa-facebook p-3 border-2 border-secondary rounded-full"></i></a>
+      <a href="#"><i class="fab fa-twitter p-3 border-2 border-secondary rounded-full"></i></a>
+      <a href="#"><i class="fab fa-reddit p-3 border-2 border-secondary rounded-full"></i></a>
+      <a href="#"><i class="fab fa-github p-3 border-2 border-secondary rounded-full"></i></a>
+      <a href="#"><i class="fab fa-instagram p-3 border-2 border-secondary rounded-full"></i></a>
+    </div>
+
+    <div class="my-12 text-center font-ubuntuMono">
+      <h1 class="text-xl">Send me a message...</h1>
+      <a id="contact" href="#" class="inline-block mt-2 px-20 py-4 text-xl tracking-widest border-2 border-secondary rounded-lg">E-mail</a>
+    </div>
+
+    <div class="text-center tracking-widest text-xs leading-6">
+      <h2><i class="fa-regular fa-copyright"></i> 2022 <a href="#" class="hover:underline underline-offset-2 uppercase">Shreya Gupta</a></h2>
+      <h2>Developed by
+        <a href="https://varunbhabhra.bio.link/" target="__blank" class="hover:underline underline-offset-2 uppercase">Varun Bhabhra</a>
+      </h2>
+    </div>
   </footer>
+
+  <!-- <article class="h-screen"></article> -->
   <script src="./script/script.js"></script>
 </body>
 

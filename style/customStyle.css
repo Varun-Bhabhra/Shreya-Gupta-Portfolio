@@ -18,15 +18,16 @@ backdrop-filter: blur( 10px );
 }
 
 #dropdown{
-  background-color: rgb(48, 55, 78);
+  background: rgba(35, 39, 52);
+  backdrop-filter: blur( 10px );
   animation: fadeIn .5s;
 }
 
-#landing_section a{
+#landing_section #contact{
   transition: background-color 0.2s ease-in;
 }
 
-#landing_section a:hover{
+#contact:hover{
   background-color: rgba(100, 255, 218, .1);
 }
 
@@ -37,15 +38,15 @@ backdrop-filter: blur( 10px );
 
 .card_article{
   background-color: rgba(100, 255, 218, .03);
+  /* background-color: rgb(35, 37, 51); */
+  /* background-color: #171929; */
 }
-
 
 @keyframes fadeIn{
   0%{
     opacity: 0;
     transform: translateX(10rem);
   }
-
   100%{
     opacity: 1;
     transform: translate(0);
