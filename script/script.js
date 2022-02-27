@@ -1,4 +1,5 @@
 ﻿// VARIABLE DECLARATION
+const navbar = document.querySelector('#navbar');
 const hamburger = document.querySelector('#check');
 const dropdown = document.querySelector('#dropdown');
 
@@ -12,6 +13,9 @@ const about_section = document.querySelector('#about_section');
 const experience_section = document.querySelector('#experience_section');
 const contact_section = document.querySelector('#contact_section');
 
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('navbar_scroll', window.scrollY > 0);
+})
 
 hamburger.addEventListener('click', () => dropdown.classList.toggle('hidden'));
 

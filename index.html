@@ -28,7 +28,7 @@
 <body class="bg-primary font-ubuntu relative ">
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="md:fixed w-full text-secondary p-6 text-xl font-thin flex justify-between shadow-lg">
+  <nav id="navbar" class="md:fixed w-full text-secondary p-6 text-xl font-thin flex justify-between">
     <h1 class="text-xl md:text-2xl font-normal hover:first-letter:">Shreya Gupta</h1>
     <!-- hamburger -->
     <label for="check" class="md:hidden">
@@ -41,7 +41,7 @@
     <div id="desktopMenu" class="hidden md:block text-sm text-textDark font-ubuntuMono">
       <a class="about mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">About</a>
       <a class="experience mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">Experience</a>
-      <a class="work mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-red-400 transition-all cursor-pointer line-through">Work</a>
+      <a class="work mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">Projects</a>
       <a class="contact mx-4 lg:mx-8 hover:underline underline-offset-4 hover:text-secondary transition-all cursor-pointer">Contact</a>
 
       <a href="#" download class="inline-block mx-4 lg:mx-8 py-3 px-8 border border-secondary rounded-sm text-secondary hover:underline underline-offset-4 hover:rounded-md hover:shadow-md hover:shadow-secondary hover:-translate-y-1 hover:scale-x-110 transition-all">Resume<i class="pl-4 fas fa-file-download hover:translate-y-1 transition-all"></i></a>
@@ -52,7 +52,7 @@
     <div id="dropdown" class="md:hidden text-xl absolute right-0 w-4/6 p-4 text-right rounded-lg flex flex-col gap-2 border-2 border-secondary">
       <a class="about tracking-[4px] my-4 mx-6 cursor-pointer">About</a>
       <a class="experience tracking-[4px] my-4 mx-6 cursor-pointer">Experience</a>
-      <a class="work tracking-[4px] my-4 mx-6 cursor-pointer">Work</a>
+      <a class="work tracking-[4px] my-4 mx-6 cursor-pointer">Projects</a>
       <a class="contact tracking-[4px] my-4 mx-6 cursor-pointer">Contact</a>
 
       <a href="#" download class="m-6 px-4 py-2 text-center tracking-[4px] border-2 border-secondary rounded-md">Resume</a>
@@ -106,9 +106,9 @@
     <section id="experience_section" class="mt-52 text-textLight">
       <h1 class="mb-32 text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:text-center">Work Experience</h1>
 
-      <div id="card_div" class="mt-20 lg:mx-32 font-ubuntuMono flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-24">
+      <div id="card_div" class="mt-20 lg:mx-32 font-ubuntuMono flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
 
-        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto hover:bg-gray-900 p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
           <img src="./img/svg/working2.svg" alt="lady working" class="w-5/6 mx-auto">
           <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Chai Pi Lo </h1>
           <hr class="opacity-50 mx-auto w-3/6">
@@ -120,20 +120,8 @@
           <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
         </article>
 
-        <article class="card_article sm:w-4/6 lg:w-2/6 lg: mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
+        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto hover:bg-gray-900 p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
           <img src="./img/svg/working4.svg" alt="lady working" class="w-5/6 mx-auto">
-          <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Chai Pi Lo </h1>
-          <hr class="opacity-50 mx-auto w-3/6">
-          <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
-            sapiente, sit
-            itaque
-            architecto
-          </p>
-          <em class="block text-xs text-right mt-2 text"> 2020 - Present</em>
-        </article>
-
-        <article class="card_article sm:w-4/6 lg:w-2/6 mx-auto p-6 border-2 border-secondary rounded-xl hover:-translate-y-3 hover:scale-105 hover:shadow-lg hover:shadow-secondary transition-all">
-          <img src="./img/svg/working3.svg" alt="lady working" class="w-5/6 mx-auto">
           <h1 class="text-2xl font-bold my-4"><i class="fa-solid fa-ciy mr-2"></i> Chai Pi Lo </h1>
           <hr class="opacity-50 mx-auto w-3/6">
           <p class="text-textDark mt-4 text-sm leading-6 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto blanditiis deleniti quasi, assumenda possimus praesentium, enim sint dolorem quia accusantium odio, aut doloremque illum omnis. Obcaecati expedita rerum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, atque perspiciatis. Perferendis quod
@@ -146,7 +134,55 @@
 
       </div>
     </section>
+    
+    <!-- PROJECTS -->
+    <section id="projects_Section" class="mt-52 text-textLight">
+      <h1 class="mb-32 text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:text-center">Projects</h1>
+
+      <article class="mt-32 md:flex justify-center items-center font-ubuntuMono">
+
+        <aside class="bg-gray-900 p-12 md:translate-x-16">
+          <h2 class="text-4xl text-secondary my-4">Image Recognition</h2>
+          <p class=" text-sm my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, ad quis. Illum dolorem voluptates soluta vero laborum, voluptatibus iure, illo nulla minus praesentium iste eligendi cupiditate fugit officia, molestiae eaque?
+          Debitis iste, qui minima voluptatibus sint quod doloribus aspernatur iusto sit blanditiis earum possimus adipisci nisi, consequatur expedita, inventore rerum quasi laboriosam? Similique fugiat dolorum quae libero nostrum repudiandae at!praesentium iste eligendi cupiditate fugit officia, molestiae eaque?
+          Debitis iste, qui minima voluptatibus sint quod doloribus aspernatur iusto sit blanditiis earum possimus adipisci nisi, consequatur expedita, inventore rerum quasi laboriosam? Similique fugiat dolorum quae libero nostrum repudiandae at!</p>
+          <ul class="my-4 list-decimal">
+            <li class="">Language</li>
+            <li>Language</li>
+            <li>Language</li>
+            <li>Language</li>
+          </ul>
+        </aside>
+        <aside class="">
+          <img src="./img/projects/one.jpg" alt="some image" class="">
+        </aside>
+
+      </article>
+
+      <article class="mt-32 md:flex justify-center items-center font-ubuntuMono">
+
+        <aside class="">
+          <img src="./img/projects/one.jpg" alt="some image" class="">
+        </aside>
+
+        <aside class="bg-gray-900 p-12 md:-translate-x-16">
+          <h2 class="text-4xl text-secondary my-4">Image Recognition</h2>
+          <p class=" text-sm my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, ad quis. Illum dolorem voluptates soluta vero laborum, voluptatibus iure, illo nulla minus praesentium iste eligendi cupiditate fugit officia, molestiae eaque?
+          Debitis iste, qui minima voluptatibus sint quod doloribus aspernatur iusto sit blanditiis earum possimus adipisci nisi, consequatur expedita, inventore rerum quasi laboriosam? Similique fugiat dolorum quae libero nostrum repudiandae at!praesentium iste eligendi cupiditate fugit officia, molestiae eaque?
+          Debitis iste, qui minima voluptatibus sint quod doloribus aspernatur iusto sit blanditiis earum possimus adipisci nisi, consequatur expedita, inventore rerum quasi laboriosam? Similique fugiat dolorum quae libero nostrum repudiandae at!</p>
+          <ul class="my-4 list-decimal">
+            <li class="">Language</li>
+            <li>Language</li>
+            <li>Language</li>
+            <li>Language</li>
+          </ul>
+        </aside>
+
+      </article>
+    </section>
   </main>
+
+  <hr class="w-4/6 mx-auto mt-32 opacity-20">
 
   <!-- FOOTER -->
   <footer id="contact_section" class="w-4/6 mx-auto mb-12 mt-52 text-textLight">
@@ -170,9 +206,9 @@
 
     <div class="text-center tracking-widest text-xs leading-6">
       <h2><i class="fa-regular fa-copyright"></i> 2022 <a href="#" class="hover:underline underline-offset-2 uppercase">Shreya Gupta</a></h2>
-      <!-- <h2>Developed by
+      <h2>Developed by
         <a href="https://varunbhabhra.bio.link/" target="__blank" class="hover:underline underline-offset-2 uppercase">Varun Bhabhra</a>
-      </h2> -->
+      </h2>
     </div>
   </footer>
 
